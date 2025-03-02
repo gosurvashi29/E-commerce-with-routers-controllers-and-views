@@ -20,7 +20,9 @@ const getProducts=(req, res) => {
 
 
   const postProducts=(req, res) => {
-    res.send("Adding a new product");
+    const data=req.body;
+    res.json({value:data.productName})
+    //res.send("Adding a new product");
    };
 
    const putProducts=(req, res) => {
