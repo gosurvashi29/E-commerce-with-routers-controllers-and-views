@@ -5,6 +5,11 @@ const getProducts=(req, res) => {
     res.sendFile(path.join(__dirname,"../views/product.html"));
   };
 
+  const getProductForm=(req, res) => {
+  
+    res.sendFile(path.join(__dirname,"../views/form.html"));
+  };
+
 
 
   const getProductsById=(req, res) => {
@@ -29,6 +34,7 @@ const getProducts=(req, res) => {
 
   module.exports={
     getProducts,
+    getProductForm,
     getProductsById,
     postProducts,putProducts,
     deleteProducts

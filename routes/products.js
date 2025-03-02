@@ -7,6 +7,8 @@ const productController=require("../controllers/productController")
 
 router.get('/', productController.getProducts);
 
+router.get('/form', productController.getProductForm);
+
 router.post('/', productController.postProducts);
 
 router.get('/:id', productController.getProductsById);
